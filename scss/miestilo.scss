@@ -1,4 +1,6 @@
-/* General: Estilos de la página en generla y los elementos que no cambian: Footer y Nav */ 
+/* General: Estilos de la página en general y los elementos que no cambian: Footer, Title  y Nav */ 
+/* General: Estilos de la página en general y los elementos que no cambian: Footer, Title  y Nav */ 
+/* General: Estilos de la página en general y los elementos que no cambian: Footer, Title y Nav */ 
 
 * {
     padding: 0;
@@ -128,7 +130,11 @@ footer {
     background: var(--tiktok);
 }
 
+//*************************************************************************************************************************//
 /*Index*/
+/*Index*/
+/*Index*/
+
 
 .img-index-container {
     display: flex;
@@ -219,34 +225,38 @@ span {
         z-index: -1;
     }
                 
+
+//***************************************************************************************************************//
+/*Novedades */
+/*Novedades */
 /*Novedades */
 
 .newsContainer {
         display: grid;
-        grid-template-columns: [x0] 1fr [x1] 1fr [x2];
-        grid-template-rows: [y0] 1fr [y1] 1fr [y2];
-        grid-template-areas: "News1 News2"
-                             "News3 News4"
-                             "News5 News6";
+        display: block;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr;
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr;
         background-image: url(../images/background.jpg);
-        background-color: #4f4d4d;
-              
+        background-size: cover;
+        background-position: center;
 }
 
 .newsContainer div {
         background-color: #4f4d4d;
         background-color: transparent;
-        border-style: solid 2px;
+        max-width: 1600px;
+        overflow:scroll;
+        border-style: solid 4px;
         border-style: outset;
-        margin: 1px;
-        padding: 1px;
+        margin: 15px;
+        padding-right: 22px;
+        padding-left: 22px;
        
 }
 
 .newsImg {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px 5px 0 0;
+        width: 100vh;
+        border: none;
 
 }
 
@@ -254,6 +264,8 @@ span {
 .News5_media iframe {
         background: transparent;
         border: none;
+        height: 500px;
+        width: 100%;
 
 }
 
@@ -278,103 +290,47 @@ span {
 }
 
 
-.News1_title {
-        grid-area: "News1";
-        background: #3b5999;
-        grid-column-start: x0;
-        grid-column-end: x1;
 
-}
+//***********************************************************************************************//
+/*Biografía*/
+/*Biografía*/
+/*Biografía*/
 
-.News1_text {
-        grid-area: "News1";
-        background: #cc0000;
-        grid-column-start: x0;
-        grid-column-end: x1;
-}
+.biographyTitle {
+    font-size: 264%;
+    }
 
-.News1_media {
-        grid-area: "News1";
-        background: #e4405f;
-        grid-column-start: x1;
-        grid-column-end: x2;
+.biographyQuote {
+    font-size: 154%;
+    }
 
-}
+.biographyPic {
+    width:  65%;
+    }
 
-.News2_title {
-    grid-area: "News2";
-    background: #53245785;
-}
+.biographyStyle0 {
+      color: #d9d9d9; 
+      margin: 5%; 
+      padding: 2%;
+      text-align: center;
+    }
 
-.News2_text {
-    grid-area: "News2";
-    background: aqua;
-}
+.biographyPicContainer {
+      margin: 2%;
+    }
 
-.News2_media {
-    grid-area: "News2";
-    background: chartreuse;
-}
+.biographyStyle1 p{
+                text-align: justify; 
+                margin-top: 0%;
+                margin-bottom: 0%;
+                margin-left: 21%;
+                margin-right: 21%;
+                font-size: 125%;
+                
+    }
 
-.News3_title {
-    grid-area: "News3";
-    background: #53245785;
-}
 
-.News3_text {
-    grid-area: "News3";
-    background: aqua;
-}
-
-.News3_media {
-    grid-area: "News3";
-    background: chartreuse;
-}
-
-.News4_title {
-    grid-area: "News4";
-    background: #53245785;
-}
-
-.News4_text {
-    grid-area: "News4";
-    background: aqua;
-}
-
-.News4_media {
-    grid-area: "News4";
-    background: chartreuse;
-}
-
-.News5_title {
-    grid-area: "News4";
-    background: #53245785;
-}
-
-.News5_text {
-    grid-area: "News4";
-    background: aqua;
-}
-
-.News5_media {
-    grid-area: "News4";
-    background: chartreuse;
-}
-
-.News6_title {
-    grid-area: "News4";
-    background: #53245785;
-}
-
-.News6_text {
-    grid-area: "News4";
-    background: aqua;
-}
-
-.News6_media {
-    grid-area: "News4";
-    background: chartreuse;
-}
+//***********************************************************************************************************//
 
 @keyframes transitionInPic {
     from {
