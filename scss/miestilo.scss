@@ -291,7 +291,7 @@ span {
 
 
 
-//***********************************************************************************************//
+//***************************************************************************************************//
 /*Biografía*/
 /*Biografía*/
 /*Biografía*/
@@ -306,6 +306,7 @@ span {
 
 .biographyPic {
     width:  65%;
+    background-color: black;
     }
 
 .biographyStyle0 {
@@ -331,6 +332,24 @@ span {
 
 
 //***********************************************************************************************************//
+/*Discografía*/
+/*Discografía*/
+/*Discografía*/
+
+
+.carousel-item img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+   
+}
+
+.spotifyPlayer {
+    text-align: center;
+}
+
+
+
 
 @keyframes transitionInPic {
     from {

@@ -312,6 +312,7 @@ span {
 
 .biographyPic {
   width: 65%;
+  background-color: black;
 }
 
 .biographyStyle0 {
@@ -332,6 +333,19 @@ span {
   margin-left: 21%;
   margin-right: 21%;
   font-size: 125%;
+}
+
+/*Discografía*/
+/*Discografía*/
+/*Discografía*/
+.carousel-item img {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.spotifyPlayer {
+  text-align: center;
 }
 
 @-webkit-keyframes transitionInPic {
