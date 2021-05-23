@@ -8,11 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/317ba650d5.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="description" content="Fan page dedicada a St Vincent: Contacto.">
     <meta name="keywords"  content="ST VINCENT, MÚSICA, ROCK, POP, ALTERNATIVE, CONTACTO">
     <title>St Vincent Argentina - Contacto</title>
 </head>
-<body>
+<body class="blackBackground">
     <header>
         <h1 class="title"> <a href="../index.html">St Vincent Argentina</a></h1>
 
@@ -36,37 +39,42 @@
 
     <section>
 
-        <form action="">
-            <div class="form-group container">
-            <fieldset>
-                <legend>ENVIANOS UN MENSAJE</legend>
-                
-                    <label for="contactoName">Nombre y Apellido:</label> 
-                    <input class="form-control" type="text" id="contactoName">
-                    <label for="contactoEmail">Email:</label> 
-                    <input class="form-control" type="email" id="contactoEmail"> 
-                    <br>
-                    <label for="ContactoNewsletter">¿Quieres recibir nuestra newsletter?:</label>
-                    <input class="form-check-input"type="checkbox" id="ContactoNewsletter" value="1">
-                    <br>
-                    <label for="contactoLugar">¿Desde dónde nos escribes?</label> 
-                    <select id="contactoLugar">
-                        <option value="Argentina">Argentina</option>
-                        <option value="No sabe/No contesta">No sabe/No contesta</option>
-                        <option value="Otro">Otro</option>
-                    </select> 
-                    <br>
-                    <textarea name="Escribe" id="" cols="60" rows="8" placeholder="Escribe tu mensaje aquí..."></textarea>
-                    <br>
-                        <input class= "btn btn-light" type="submit" value="Enviar">
-                        <input class= "btn btn-light" type="reset" value="Borrar todo">
-                        <input class= "btn btn-light" type="button" value="Nada">
-                   
-            </fieldset>
+        <div class="container contact-form">
+            <div class="contact-image">
+                <img src="../images/avatarAnnie.jpg" alt="annie_contact"/>
+            </div>
+            <form method="post">
+                <h3>Envíame tus sugerencias</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Tu nombre..." value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Tu e-mail..." value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Tu mensaje..." style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        </form>
     </section>
+
     <br>
+
+    <div class="img-index-container">
+        <img class= "img-index" src="../images/standAnnie.jpeg" alt="stand Annie">
+    </div>
+
+    <div class="irArriba"> <a href="#"> IR ARRIBA</a></div>
+    
     <footer>
         <div class="redes-container"> 
             <ul class="redes-ul"> 
